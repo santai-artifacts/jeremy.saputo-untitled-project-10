@@ -12,8 +12,8 @@
     --panel: #171a21;
     --grid-a: #1b1f27;
     --grid-b: #1e232c;
-    --snake: #4ade80;
-    --snake-head: #86efac;
+    --snake: #ec4899;
+    --snake-head: #f9a8d4;
     --food: #f87171;
     --text: #e6e9ef;
     --muted: #8b93a3;
@@ -256,7 +256,7 @@
 
     // Snake
     snake.forEach((s, i) => {
-      ctx.fillStyle = i === 0 ? '#86efac' : '#4ade80';
+      ctx.fillStyle = i === 0 ? '#f9a8d4' : '#ec4899';
       roundRect(s.x * CELL + 1.5, s.y * CELL + 1.5, CELL - 3, CELL - 3, 5);
       ctx.fill();
     });
